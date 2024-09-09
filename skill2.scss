@@ -1,0 +1,122 @@
+@import "../../app.scss";
+
+.skills {
+    padding-right: 25px;
+    background-color: var(--secon-bg-color);
+
+    @media screen and (max-width: 738px) {
+        padding-right: 10px; // Adjust padding for mobile view
+    }
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+    h2 {
+        font-size: 30px;
+
+        @media screen and (max-width: 738px) {
+            font-size: 24px; // Adjust font size for mobile view
+        }
+    }
+}
+
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr; // Change to single column layout for mobile view
+        grid-row-gap: 20px; // Adjust row gap for mobile view
+        grid-column-gap: 20px; // Adjust column gap for mobile view
+    }
+}
+
+.skill-bar,
+.skill-bar1 {
+    margin-bottom: 2.3rem;
+
+    @media screen and (max-width: 738px) {
+        margin-bottom: 1.5rem; // Adjust margin for mobile view
+    }
+}
+
+.skill-main h3 {
+    margin-bottom: 2rem;
+    font-size: 25px;
+    text-align: center;
+
+    @media screen and (max-width: 738px) {
+        font-size: 20px; // Adjust font size for mobile view
+        margin-bottom: 1.5rem; // Adjust margin for mobile view
+    }
+}
+
+.skill-left .skill-bar .info,
+.skill-right .skill-bar1 .info1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    @media screen and (max-width: 738px) {
+        padding: 0 5px; // Adjust padding for mobile view
+    }
+}
+
+.skill-left .skill-bar .bar,
+.skill-right .skill-bar1 .bar1 {
+    width: 100%;
+    height: 10px;
+    background-color: lightcyan;
+    border-radius: 30px;
+    margin: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span,
+.skill-bar1 .bar1 span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #1E90FF;
+    border-radius: 25px;
+    box-shadow: 0 0 2px #1E90FF, 0 0 5px #1E90FF;
+}
+
+.skill-bar .bar .html { width: 85%; animation: Html 2s; }
+.skill-bar .bar .css { width: 70%; animation: Css 3s; }
+.skill-bar .bar .javascript { width: 60%; animation: JavaScript 4s; }
+.skill-bar .bar .react { width: 70%; animation: React 5s; }
+.skill-bar .bar .hacking { width: 65%; animation: Hacking 6s; }
+.skill-bar .bar .python { width: 65%; animation: Python 7s; }
+.skill-bar .bar .java { width: 50%; animation: Java 8s; }
+
+.skill-bar1 .bar1 .typing { width: 100%; animation: Typing 2s; }
+.skill-bar1 .bar1 .communication { width: 85%; animation: Communication 3s; }
+.skill-bar1 .bar1 .timemanagement { width: 95%; animation: TimeManagement 4s; }
+.skill-bar1 .bar1 .al { width: 95%; animation: AvtiveListening 5s; }
+.skill-bar1 .bar1 .tw { width: 100%; animation: TeamWork 6s; }
+.skill-bar1 .bar1 .flexibile { width: 95%; animation: Flexibility 7s; }
+
+@keyframes Html { 0% { width: 0%; } 100% { width: 85%; } }
+@keyframes Css { 0% { width: 0%; } 100% { width: 70%; } }
+@keyframes JavaScript { 0% { width: 0%; } 100% { width: 60%; } }
+@keyframes React { 0% { width: 0%; } 100% { width: 70%; } }
+@keyframes Hacking { 0% { width: 0%; } 100% { width: 65%; } }
+@keyframes Python { 0% { width: 0%; } 100% { width: 65%; } }
+@keyframes Java { 0% { width: 0%; } 100% { width: 50%; } }
+@keyframes Typing { 0% { width: 0%; } 100% { width: 100%; } }
+@keyframes Communication { 0% { width: 0%; } 100% { width: 85%; } }
+@keyframes TimeManagement { 0% { width: 0%; } 100% { width: 95%; } }
+@keyframes AvtiveListening { 0% { width: 0%; } 100% { width: 100%; } }
+@keyframes TeamWork { 0% { width: 0%; } 100% { width: 100%; } }
+@keyframes Flexibility { 0% { width: 0%; } 100% { width: 95%; } }
